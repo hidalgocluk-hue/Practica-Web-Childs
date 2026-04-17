@@ -1,52 +1,72 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 
+body {
+  line-height: 1.5;
+}
 
+/* ===================== */
 /* HEADER */
+/* ===================== */
+
 .header {
   background-image: url("images/background.png");
   background-size: cover;
-  background-position: center;
-  height:   850px;
-  display: flex;
-  flex-direction: column;
-  color: white ;
+  background-position: center 90%;
+  background-repeat: no-repeat;
+  min-height: 125vh;
 }
-   
+
+/* ===================== */
+/* CONTAINER */
+/* ===================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===================== */
+/* NAV */
+/* ===================== */
+
 .nav {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 80px;
-}
-
-.nav ul {
-  display: flex;       
-  gap: 40px;        
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav ul li {
-  color: black;
-  transition: 0.3s;
-  cursor: pointer;
+  padding: 15px 0;
 }
 
 .logo {
-    color: black;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.header-content {
+.nav-links {
   display: flex;
-  align-items: flex-start;
-  flex: 1;
-  padding: 170px 120px;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===================== */
+/* HERO */
+/* ===================== */
+
+.header-content {
+  padding: 80px 0;
+  color: white;
 }
 
 .text {
@@ -54,27 +74,77 @@
 }
 
 .header-content h1 {
-  font-size: 130px;
-   font-weight: bold;
-  margin-bottom: 70px;
+  font-size: 135px;
+  line-height: 1;
 }
 
 .header-content p {
   font-size: 20px;
-  margin-top: -30px;
-  line-height: 1.4;
+  margin-top: 10px;
 }
 
-/* BOTÓN */
 .btn {
-  display: flex ;
-  padding: 15px 80px;
-  margin-top: 120px;
+  margin-top: 30px;
+  padding: 20px 70px;
   background: #b2f7f7;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 18px;
-  transition: 0.3s;
-  color: black;
+}
+
+/* ===================== */
+/* 📱 RESPONSIVE */
+/* ===================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .header {
+    min-height: 110vh;
+    background-position: center 80%;
+  }
+
+  .header-content h1 {
+    font-size: 90px;
+  }
+
+  .btn {
+    padding: 18px 60px;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-content {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .header-content h1 {
+    font-size: 60px;
+  }
+
+  .header-content p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 15px 50px;
+  }
 }
