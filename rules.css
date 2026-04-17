@@ -1,0 +1,25 @@
+/* RULES */
+.rules {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+ background-image: url("images/bg-grid.png");
+ background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+ 
+.rules-text {
+  max-width: 600px;
+  color: black;
+  padding: 25px;
+ }
+
+.rules-img {
+  width: 450px;
+  justify-content: right;
+  padding: 10px;
+  margin-top: -15px;
+}
+  

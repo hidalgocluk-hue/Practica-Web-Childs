@@ -1,0 +1,30 @@
+
+/* PRODUCTS */
+.products {
+  text-align: center;
+  padding: 60px;
+  background: #b2f7f7;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 150px; 
+  flex-wrap: wrap; 
+  margin-top: 40px;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  width: 120px;
+}
+
+.cards button {
+  margin-top: 10px;
+  background: #fd9f51;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
