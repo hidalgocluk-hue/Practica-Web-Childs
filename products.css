@@ -1,4 +1,3 @@
-
 /* PRODUCTS */
 .products {
   text-align: center;
@@ -7,6 +6,7 @@
 }
 .cards {
   display: flex;
+  grid-template-columns: ;
   justify-content: center;
   gap: 150px; 
   flex-wrap: wrap; 
@@ -28,3 +28,23 @@
   padding: 10px 20px;
   cursor: pointer;
 }
+
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rules {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .rules-img img {
+    width: 250px;
+  } 
+  }
+
