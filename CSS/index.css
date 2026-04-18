@@ -1,8 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
 }
 
 body {
@@ -19,6 +19,8 @@ body {
   background-position: center 90%;
   background-repeat: no-repeat;
   min-height: 125vh;
+  text-align: center;
+  padding: 20px;
 }
 
 /* ===================== */
@@ -60,10 +62,6 @@ body {
   font-weight: 500;
 }
 
-/* ===================== */
-/* HERO */
-/* ===================== */
-
 .header-content {
   padding: 80px 0;
   color: white;
@@ -85,36 +83,11 @@ body {
 
 .btn {
   margin-top: 30px;
-  padding: 20px 70px;
+  padding: 20px 80px;
   background: #b2f7f7;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-}
-
-/* ===================== */
-/* 📱 RESPONSIVE */
-/* ===================== */
-
-/* TABLET */
-@media (max-width: 768) {
-
-  .header {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
-    text-align: center;
-    min-height: 110vh;
-    background-position: center 80%;
-  }
-
-  .header-content h1 {
-    font-size: 90px;
-  }
-
-  .btn {
-    padding: 18px 60px;
-  }
 }
 
 /* INFO */
@@ -134,17 +107,13 @@ body {
   padding: 60px;
   background: #b2f7f7;
 }
+
 .cards {
   display: flex;
-  grid-template-columns: ;
   justify-content: center;
   gap: 150px; 
   flex-wrap: wrap; 
   margin-top: 40px;
-}
-
-.card {
-  text-align: center;
 }
 
 .card img {
@@ -164,125 +133,132 @@ body {
  display: grid;
  grid-template-columns: 1fr 1fr;
  padding: 60px;
- background-image: url("images/bg-grid.png");
+ background-image: url(images/bg-grid.png);
  background-size: cover;
  background-position: center;
  background-repeat: no-repeat;
  align-items: center;
  height: 100%;
 }
+
+.rules-img img {
+  width: 100%;
+  max-width: 400px;
+ 
+}
+
 .rules-text {
   max-width: 500px;
   color: black;
   padding: 25px;
  }
-.rules-img {
-  display: flex;
-  justify-content: center
- }  
-.rules-img img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
 /* FOOTER */
 .footer {
+  display: flex;
+  justify-content: space-between; 
+  padding: 40px 30px 30px;  
   background: #0a0a0a; 
   color: white;              
-  padding: 40px 20px 20px;  
-  text-align: center;
+  gap:20px; 
+  flex-wrap: wrap;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-around; 
   flex-wrap: wrap;               
-  gap: 20px;                     
+  gap: 40px;                     
   margin-bottom: 20px;
   font-weight: 200;
 }
 
 
-/* CELULAR */
+
+
+/* ===================== */
+/* 📱 RESPONSIVE */
+/* ===================== */
+
 @media (max-width: 768px) {
 
-  .nav {
+
+/* ===================== */
+/* HEADER */
+/* ===================== */
+
+.header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+    min-height: 110vh;
+    background-position: center 80%;
+  }
+
+.nav {
     flex-direction: column;
     font-size: 14px;
     gap: 10px;
     text-align: center;
-  }
+}
 
-  .nav-links {
+.nav-links {
     flex-direction: column;
     gap: 10px;
   }
 
-  .header-content {
+.header-content {
     padding: 50px 0;
     text-align: center;
   }
 
-  .text {
-    max-width: 100%;
-  }
-
-  .header-content h1 {
-    font-size: 60px;
-  }
-
-  .header-content p {
-    font-size: 16px;
-  }
-
-  .btn {
-    padding: 15px 50px;
-  }
-
- .header-content h1 {
+.header-content h1 {
   height: auto;
   justify-content: center;
   text-align: center;
   font-size: 40px;
   }
-
-  .header-content p {
+.header-content p {
     padding: 60px;
     font-size: 16px;
   }
 
- .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .rules {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .rules-img img {
-    width: 250px;
-  } 
+.text {
+    max-width: 100%;
+}
+.btn {
+    padding: 15px 50px;
+}
 
   
-  .rules {
+/* ===================== */
+/* PRODUCTS */
+/* ===================== */
+
+cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+  
+/* ===================== */
+/* RULES */
+/* ===================== */
+
+.rules {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 30px;
     background-size: 90%;
-   
   }
 
-  .rules-img img {
+.rules-img img {
     width: 250px;
     max-width: 100%;
     height: auto;
   }
 
-  .footer {
+.footer {
   flex-direction: column;
   align-items: center;
 }
@@ -294,5 +270,3 @@ body {
 }
 
 }
-
-
